@@ -1,0 +1,17 @@
+Number of different DAG: 15
+Different DAG representants:
+	0001: sbq [1 members]-> [sbq]
+	0002: nle [1 members]-> [nle]
+	0003: mcc [1 members]-> [mcc]
+	0004: caty [1 members]-> [caty]
+	0005: pon [1 members]-> [pon]
+	0006: ggo [1 members]-> [ggo]
+	0007: rro [1 members]-> [rro]
+	0008: ptr [1 members]-> [ptr]
+	0009: mcf [1 members]-> [mcf]
+	0010: pps [1 members]-> [pps]
+	0011: rbb [1 members]-> [rbb]
+	0012: hsa [1 members]-> [hsa]
+	0013: cjc [1 members]-> [cjc]
+	0014: tfn [1 members]-> [tfn]
+	0015: csab [1 members]-> [csab]

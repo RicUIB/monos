@@ -1,0 +1,12 @@
+## Groups used
+hominids
+human_chimpanzee
+human_bonobo
+human_gorilla
+human_orangutan
+chimpanzee_bonobo
+chimpanzee_gorilla
+chimpanzee_orangutan
+bonobo_gorilla
+bonobo_orangutan
+gorilla_orangutan
