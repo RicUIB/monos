@@ -1,10 +1,12 @@
 ---
 title: "Load Data MBB primates"
+date: "2021-11-04"
 output:
   html_document: 
     toc: yes
     number_sections: yes
     keep_md: yes
+
 ---
 
 
@@ -13,6 +15,28 @@ output:
 
 
 # Primate experiment
+
+    Homínidos: humano, chimpancé, bonobo, gorila  y orangután
+    La diferentes parejas de homínidos
+        humano-chimpancé
+        humano-bonobo
+        humano-gorila
+        humano-orangután
+        chimpancé-bonobo
+        chimpancé-gorila
+        chimpancé-orangután
+        bonobo-gorila
+        bonobo-orangután
+        gorila-orangutan
+
+en la carpeta compartida tenéis disponible el material:
+
+https://uibes-my.sharepoint.com/:f:/g/personal/ppr512_id_uib_es/EvE3Y3TI851KsN3UVt3WHAgBC5DNslmvTH1a_rDm1nxAeA?e=5%3agezLhb&at=9
+
+La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
+
+* carpeta "data"  experimento 15 primates  y 3 primates pairwise comparison 
+* carpeta "data/pathways" individuales?
 
 
 ## Read data 
@@ -59181,63 +59205,6 @@ output:
 ### Diferent reactions bonobo versus gorila
 
 
-
-```
-## Warning: package 'sets' was built under R version 4.0.5
-```
-
-```
-## Registered S3 method overwritten by 'sets':
-##   method        from   
-##   print.element ggplot2
-```
-
-```
-## 
-## Attaching package: 'sets'
-```
-
-```
-## The following object is masked from 'package:kableExtra':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:forcats':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:stringr':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:dplyr':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:purrr':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:tidyr':
-## 
-##     %>%
-```
-
-```
-## The following object is masked from 'package:tibble':
-## 
-##     %>%
-```
 
 ```
 ## {"rn:R00713", "rn:R01492", "rn:R01709", "rn:R01736", "rn:R02106",
