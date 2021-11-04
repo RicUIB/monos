@@ -36,7 +36,7 @@ https://uibes-my.sharepoint.com/:f:/g/personal/ppr512_id_uib_es/EvE3Y3TI851KsN3U
 La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 * carpeta "data"  experimento 15 primates  y 3 primates pairwise comparison 
-* carpeta "data/pathways" individuales?
+* carpeta "data/data/pathways" individuales?
 
 
 ## Read data 
@@ -45,13 +45,13 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   .default = col_double(),
 ##   `MBB Id` = col_character(),
 ##   Reactions = col_character()
 ## )
-## i Use `spec()` for the full column specifications.
+## ℹ Use `spec()` for the full column specifications.
 ```
 
 
@@ -59153,7 +59153,7 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   MBB.Id = col_character(),
 ##   reaction = col_character(),
@@ -59166,19 +59166,19 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## Warning: 1762 parsing failures.
-## row col  expected    actual                                            file
-##   1  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_core_summary.tsv'
-##   2  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_core_summary.tsv'
-##   3  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_core_summary.tsv'
-##   4  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_core_summary.tsv'
-##   5  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_core_summary.tsv'
-## ... ... ......... ......... ...............................................
+## row col  expected    actual                                                 file
+##   1  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_core_summary.tsv'
+##   2  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_core_summary.tsv'
+##   3  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_core_summary.tsv'
+##   4  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_core_summary.tsv'
+##   5  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_core_summary.tsv'
+## ... ... ......... ......... ....................................................
 ## See problems(...) for more details.
 ```
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   MBB.Id = col_character(),
 ##   reaction = col_character(),
@@ -59191,13 +59191,13 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## Warning: 1795 parsing failures.
-## row col  expected    actual                                           file
-##   1  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_pan_summary.tsv'
-##   2  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_pan_summary.tsv'
-##   3  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_pan_summary.tsv'
-##   4  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_pan_summary.tsv'
-##   5  -- 6 columns 7 columns 'data/Primates_bonobo_gorilla_pan_summary.tsv'
-## ... ... ......... ......... ..............................................
+## row col  expected    actual                                                file
+##   1  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_pan_summary.tsv'
+##   2  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_pan_summary.tsv'
+##   3  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_pan_summary.tsv'
+##   4  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_pan_summary.tsv'
+##   5  -- 6 columns 7 columns 'data/data/Primates_bonobo_gorilla_pan_summary.tsv'
+## ... ... ......... ......... ...................................................
 ## See problems(...) for more details.
 ```
 
@@ -59205,6 +59205,59 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 ### Diferent reactions bonobo versus gorila
 
 
+
+```
+## Registered S3 method overwritten by 'sets':
+##   method        from   
+##   print.element ggplot2
+```
+
+```
+## 
+## Attaching package: 'sets'
+```
+
+```
+## The following object is masked from 'package:kableExtra':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:forcats':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:stringr':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:dplyr':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:purrr':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:tidyr':
+## 
+##     %>%
+```
+
+```
+## The following object is masked from 'package:tibble':
+## 
+##     %>%
+```
 
 ```
 ## {"rn:R00713", "rn:R01492", "rn:R01709", "rn:R01736", "rn:R02106",
@@ -59221,7 +59274,7 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   MBB.Id = col_character(),
 ##   reaction = col_character(),
@@ -59234,19 +59287,19 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## Warning: 1781 parsing failures.
-## row col  expected    actual                            file
-##   1  -- 6 columns 7 columns 'data/pathways/pps_summary.tsv'
-##   2  -- 6 columns 7 columns 'data/pathways/pps_summary.tsv'
-##   3  -- 6 columns 7 columns 'data/pathways/pps_summary.tsv'
-##   4  -- 6 columns 7 columns 'data/pathways/pps_summary.tsv'
-##   5  -- 6 columns 7 columns 'data/pathways/pps_summary.tsv'
-## ... ... ......... ......... ...............................
+## row col  expected    actual                                 file
+##   1  -- 6 columns 7 columns 'data/data/pathways/pps_summary.tsv'
+##   2  -- 6 columns 7 columns 'data/data/pathways/pps_summary.tsv'
+##   3  -- 6 columns 7 columns 'data/data/pathways/pps_summary.tsv'
+##   4  -- 6 columns 7 columns 'data/data/pathways/pps_summary.tsv'
+##   5  -- 6 columns 7 columns 'data/data/pathways/pps_summary.tsv'
+## ... ... ......... ......... ....................................
 ## See problems(...) for more details.
 ```
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   MBB.Id = col_character(),
 ##   reaction = col_character(),
@@ -59259,13 +59312,13 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 ```
 ## Warning: 1776 parsing failures.
-## row col  expected    actual                            file
-##   1  -- 6 columns 7 columns 'data/pathways/ggo_summary.tsv'
-##   2  -- 6 columns 7 columns 'data/pathways/ggo_summary.tsv'
-##   3  -- 6 columns 7 columns 'data/pathways/ggo_summary.tsv'
-##   4  -- 6 columns 7 columns 'data/pathways/ggo_summary.tsv'
-##   5  -- 6 columns 7 columns 'data/pathways/ggo_summary.tsv'
-## ... ... ......... ......... ...............................
+## row col  expected    actual                                 file
+##   1  -- 6 columns 7 columns 'data/data/pathways/ggo_summary.tsv'
+##   2  -- 6 columns 7 columns 'data/data/pathways/ggo_summary.tsv'
+##   3  -- 6 columns 7 columns 'data/data/pathways/ggo_summary.tsv'
+##   4  -- 6 columns 7 columns 'data/data/pathways/ggo_summary.tsv'
+##   5  -- 6 columns 7 columns 'data/data/pathways/ggo_summary.tsv'
+## ... ... ......... ......... ....................................
 ## See problems(...) for more details.
 ```
 

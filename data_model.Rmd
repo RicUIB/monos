@@ -12,7 +12,7 @@ output:
 
 
 ```{r setup,message=FALSE, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE,cache=TRUE,messages=FALSE, warnings=FALSE)
+knitr::opts_chunk$set(echo = FALSE,cache=FALSE,messages=FALSE, warnings=FALSE)
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -41,14 +41,14 @@ https://uibes-my.sharepoint.com/:f:/g/personal/ppr512_id_uib_es/EvE3Y3TI851KsN3U
 La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 
 * carpeta "data"  experimento 15 primates  y 3 primates pairwise comparison 
-* carpeta "data/pathways" individuales?
+* carpeta "data/data/pathways" individuales?
 
 
 ## Read data 
 
 
 ```{r}
-MBB_primates=read_csv("data/Different_MBB_Primates.csv")
+MBB_primates=read_csv("data/data/Different_MBB_Primates.csv")
 ```
 
 
@@ -89,8 +89,8 @@ scroll_box(kable_styling(kable_input=kable(table(origin[MBB_primates$natural==1]
 ### Bonobo gorila
 
 ```{r}
-bonobo_gorila_core=read_tsv("data/Primates_bonobo_gorilla_core_summary.tsv")
-bonobo_gorila_pan=read_tsv("data/Primates_bonobo_gorilla_pan_summary.tsv")
+bonobo_gorila_core=read_tsv("data/data/Primates_bonobo_gorilla_core_summary.tsv")
+bonobo_gorila_pan=read_tsv("data/data/Primates_bonobo_gorilla_pan_summary.tsv")
 
 
 ```
@@ -110,9 +110,9 @@ set_symdiff(reactions_core,reactions_pan)
 
 ```{r}
 library("sets")
-bonobo_reactions=read_tsv("data/pathways/pps_summary.tsv")
+bonobo_reactions=read_tsv("data/data/pathways/pps_summary.tsv")
 reactions_bonobo=gsub(bonobo_reactions$reaction,pattern = "rn:",replacement ="")
-gorila_reactions=read_tsv("data/pathways/ggo_summary.tsv")
+gorila_reactions=read_tsv("data/data/pathways/ggo_summary.tsv")
 reactions_gorila=gsub(gorila_reactions$reaction,pattern = "rn:",replacement ="")
 reactions_diff=gsub(set_symdiff(reactions_core,reactions_pan),pattern = "rn:",replacement ="")
 aux=tibble(reactions_diff,bonobo=reactions_diff %in% reactions_bonobo,
