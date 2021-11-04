@@ -43,13 +43,34 @@ La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
 * carpeta "data"  experimento 15 primates  y 3 primates pairwise comparison 
 * carpeta "data/data/pathways" individuales?
 
+## Read metadata
+
+```{r}
+taxo=read_csv2("data/metadata/taxonomia.csv")
+library(readxl)
+pathway=read_tsv("data/metadata/pathwayslist.txt",
+            col_names = c("Type1","Type2","Id_pw","Name"),col_types = "cccc" )
+pathway=na.omit(pathway %>% fill(Type1,Type2,.direction="down") )
+scroll_box(kable_styling(kable_input=kable(pathway,"html")), width = "100%", height = "500px")
+```
+
 
 ## Read data 
 
 
 ```{r}
 MBB_primates=read_csv("data/data/Different_MBB_Primates.csv")
+MBB_pw_primates=read_csv("data/data/MBB_Pw_relation_Primates.csv")
+organism_pw=read_csv("data/data/organism_pathways_relation.csv",col_names = TRUE)
+primates_names=taxo %>% filter(Organism %in% organism_pw$X1[-1])
+primates_names
 ```
+
+
+ 
+ Nombres del experimento
+
+
 
 
 
@@ -74,9 +95,11 @@ origin=sapply(MBB_split,FUN=function(x)x[1])
 len_MBB=sapply(MBB_split,FUN=function(x)length(x))
 table(len_MBB)
 count_sub_MBB =table(origin)
-
-scroll_box(kable_styling(kable_input=kable(count_sub_MBB,"html")), width = "100%", height = "500px")
-scroll_box(kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html")), width = "100%", height = "500px")
+t1=kable_styling(kable_input=kable(count_sub_MBB,"html"))
+t2=kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html"))
+#scroll_box(kable_styling(kable_input=kable(count_sub_MBB,"html")), width = "100%", height = "500px")
+#scroll_box(kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html")), width = "100%", height = "500px")
+scroll_box(kable_styling(kable_input=kable(count_sub_MBB,"html")),kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html")), width = "100%", height = "500px")
 ```
 
 ```{r}
