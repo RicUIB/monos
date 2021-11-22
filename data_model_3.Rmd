@@ -1,0 +1,153 @@
+---
+title: "Load Data MBB primates"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: yes
+    number_sections: yes
+    keep_md: yes
+
+---
+
+
+
+```{r setup,message=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,cache=FALSE,messages=FALSE, warnings=FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+
+# Primate experiment
+
+    Homínidos: humano, chimpancé, bonobo, gorila  y orangután
+    La diferentes parejas de homínidos
+        humano-chimpancé
+        humano-bonobo
+        humano-gorila
+        humano-orangután
+        chimpancé-bonobo
+        chimpancé-gorila
+        chimpancé-orangután
+        bonobo-gorila
+        bonobo-orangután
+        gorila-orangutan
+
+en la carpeta compartida tenéis disponible el material:
+
+https://uibes-my.sharepoint.com/:f:/g/personal/ppr512_id_uib_es/EvE3Y3TI851KsN3UVt3WHAgBC5DNslmvTH1a_rDm1nxAeA?e=5%3agezLhb&at=9
+
+La carpeta es: ce62219c-98fc-3ddf-a373-f6560ad6c8b5
+
+* carpeta "data"  experimento 15 primates  y 3 primates pairwise comparison 
+* carpeta "data/data/pathways" individuales?
+
+## Read metadata
+
+```{r}
+taxo=read_csv2("data/metadata/taxonomia.csv")
+library(readxl)
+pathway=read_tsv("data/metadata/pathwayslist.txt",
+            col_names = c("Type1","Type2","Id_pw","Name"),col_types = "cccc" )
+pathway=na.omit(pathway %>% fill(Type1,Type2,.direction="down") )
+scroll_box(kable_styling(kable_input=kable(pathway,"html")), width = "100%", height = "500px")
+```
+
+
+## Read data 
+
+
+```{r}
+MBB_primates=read_csv("data/data/Different_MBB_Primates.csv")
+MBB_pw_primates=read_csv("data/data/MBB_Pw_relation_Primates.csv")
+organism_pw=read_csv("data/data/organism_pathways_relation.csv",col_names = TRUE)
+primates_names=taxo %>% filter(Organism %in% organism_pw$X1[-1])
+primates_names
+```
+
+
+ 
+ Nombres del experimento
+
+
+
+
+
+```{r}
+df_tabla1=tibble(
+  Statistic=c("Total number MBB's:","Total reactions:"),
+  value=c(nrow(MBB_primates),ncol(MBB_primates)-5) 
+)
+knitr::kable(df_tabla1,caption="Basic statistics MBB's primates",label="t1")
+```
+
+```{r}
+count_reactions=table(MBB_primates$natural)
+names(count_reactions)=c("Synthetic","Natural")
+knitr::kable(count_reactions,col.names = c("Type","Count"))
+```
+
+
+```{r}
+str_split(MBB_primates$`MBB Id`,pattern="\\.")-> MBB_split
+origin=sapply(MBB_split,FUN=function(x)x[1])
+len_MBB=sapply(MBB_split,FUN=function(x)length(x))
+table(len_MBB)
+count_sub_MBB =table(origin)
+t1=kable_styling(kable_input=kable(count_sub_MBB,"html"))
+t2=kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html"))
+#scroll_box(kable_styling(kable_input=kable(count_sub_MBB,"html")), width = "100%", height = "500px")
+#scroll_box(kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html")), width = "100%", height = "500px")
+scroll_box(kable_styling(kable_input=kable(count_sub_MBB,"html")),kable_styling(kable_input=kable(as.data.frame(table(origin,MBB_primates$natural)),"html")), width = "100%", height = "500px")
+```
+
+```{r}
+scroll_box(kable_styling(kable_input=kable(table(origin[MBB_primates$natural==1]),"html")), width = "100%", height = "500px")
+```
+
+## Load pan and core
+
+
+### Bonobo gorila
+
+```{r}
+bonobo_gorila_core=read_tsv("data/data/Primates_bonobo_gorilla_core_summary.tsv")
+bonobo_gorila_pan=read_tsv("data/data/Primates_bonobo_gorilla_pan_summary.tsv")
+
+
+```
+
+
+### Diferent reactions bonobo versus gorila
+
+
+```{r}
+reactions_core=unique(bonobo_gorila_core$reaction)
+reactions_pan=unique(bonobo_gorila_pan$reaction)
+library(sets)
+set_symdiff(reactions_core,reactions_pan)
+```
+
+### Table links diferent reactions
+
+```{r}
+library("sets")
+bonobo_reactions=read_tsv("data/data/pathways/pps_summary.tsv")
+reactions_bonobo=gsub(bonobo_reactions$reaction,pattern = "rn:",replacement ="")
+gorila_reactions=read_tsv("data/data/pathways/ggo_summary.tsv")
+reactions_gorila=gsub(gorila_reactions$reaction,pattern = "rn:",replacement ="")
+reactions_diff=gsub(set_symdiff(reactions_core,reactions_pan),pattern = "rn:",replacement ="")
+aux=tibble(reactions_diff,bonobo=reactions_diff %in% reactions_bonobo,
+           gorila=reactions_diff %in% reactions_gorila,
+           link=paste0("https://www.genome.jp/entry/",reactions_diff))
+scroll_box(kable_styling(kable_input=kable(aux,"html")), width = "100%", height = "500px")
+
+```
+
+
+
+```{r}
+knitr::kable(table(aux$bonobo,aux$gorila))
+```
+
