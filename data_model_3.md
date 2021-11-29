@@ -1,6 +1,6 @@
 ---
 title: "Load Data MBB primates"
-date: "2021-11-23"
+date: "2021-11-26"
 output:
   html_document: 
     toc: yes
@@ -72735,278 +72735,365 @@ Load
 <table>
  <thead>
   <tr>
-   <th style="text-align:right;"> 0001 </th>
-   <th style="text-align:right;"> 0002 </th>
-   <th style="text-align:right;"> 0003 </th>
-   <th style="text-align:right;"> 0004 </th>
-   <th style="text-align:right;"> 0005 </th>
-   <th style="text-align:right;"> 0006 </th>
-   <th style="text-align:right;"> 0007 </th>
-   <th style="text-align:right;"> 0008 </th>
-   <th style="text-align:right;"> 0009 </th>
-   <th style="text-align:right;"> 0010 </th>
-   <th style="text-align:right;"> 0011 </th>
-   <th style="text-align:right;"> 0012 </th>
-   <th style="text-align:right;"> 0013 </th>
-   <th style="text-align:right;"> 0014 </th>
-   <th style="text-align:right;"> 0015 </th>
+   <th style="text-align:left;"> Organism </th>
+   <th style="text-align:left;"> Labels </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1899915 </td>
-   <td style="text-align:right;"> 0.2483866 </td>
-   <td style="text-align:right;"> 0.4096874 </td>
-   <td style="text-align:right;"> 0.2546891 </td>
-   <td style="text-align:right;"> 0.2423764 </td>
-   <td style="text-align:right;"> 0.2326588 </td>
-   <td style="text-align:right;"> 0.2481991 </td>
-   <td style="text-align:right;"> 0.2748795 </td>
-   <td style="text-align:right;"> 0.2429357 </td>
-   <td style="text-align:right;"> 0.2768555 </td>
-   <td style="text-align:right;"> 0.3904953 </td>
-   <td style="text-align:right;"> 0.1845335 </td>
-   <td style="text-align:right;"> 0.4078432 </td>
-   <td style="text-align:right;"> 0.2303475 </td>
+   <td style="text-align:left;"> sbq </td>
+   <td style="text-align:left;"> Bolivian Squirrel Monkey </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.1899915 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1857372 </td>
-   <td style="text-align:right;"> 0.3773918 </td>
-   <td style="text-align:right;"> 0.1946302 </td>
-   <td style="text-align:right;"> 0.1774321 </td>
-   <td style="text-align:right;"> 0.1734644 </td>
-   <td style="text-align:right;"> 0.1859616 </td>
-   <td style="text-align:right;"> 0.2214855 </td>
-   <td style="text-align:right;"> 0.1785280 </td>
-   <td style="text-align:right;"> 0.2236106 </td>
-   <td style="text-align:right;"> 0.3590270 </td>
-   <td style="text-align:right;"> 0.2635393 </td>
-   <td style="text-align:right;"> 0.3750817 </td>
-   <td style="text-align:right;"> 0.1613516 </td>
+   <td style="text-align:left;"> nle </td>
+   <td style="text-align:left;"> Gibbon </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2483866 </td>
-   <td style="text-align:right;"> 0.1857372 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.3361344 </td>
-   <td style="text-align:right;"> 0.1778994 </td>
-   <td style="text-align:right;"> 0.1577939 </td>
-   <td style="text-align:right;"> 0.1031528 </td>
-   <td style="text-align:right;"> 0.1631462 </td>
-   <td style="text-align:right;"> 0.1968668 </td>
-   <td style="text-align:right;"> 0.1464927 </td>
-   <td style="text-align:right;"> 0.2229308 </td>
-   <td style="text-align:right;"> 0.3191746 </td>
-   <td style="text-align:right;"> 0.2741974 </td>
-   <td style="text-align:right;"> 0.3359914 </td>
-   <td style="text-align:right;"> 0.1549307 </td>
+   <td style="text-align:left;"> mcc </td>
+   <td style="text-align:left;"> Rhesus </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.4096874 </td>
-   <td style="text-align:right;"> 0.3773918 </td>
-   <td style="text-align:right;"> 0.3361344 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.4119930 </td>
-   <td style="text-align:right;"> 0.4162232 </td>
-   <td style="text-align:right;"> 0.4041677 </td>
-   <td style="text-align:right;"> 0.4058230 </td>
-   <td style="text-align:right;"> 0.4189090 </td>
-   <td style="text-align:right;"> 0.4034200 </td>
-   <td style="text-align:right;"> 0.4302380 </td>
-   <td style="text-align:right;"> 0.1330500 </td>
-   <td style="text-align:right;"> 0.4521437 </td>
-   <td style="text-align:right;"> 0.1307674 </td>
-   <td style="text-align:right;"> 0.4070806 </td>
+   <td style="text-align:left;"> caty </td>
+   <td style="text-align:left;"> Sooty Mangabey </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2546891 </td>
-   <td style="text-align:right;"> 0.1946302 </td>
-   <td style="text-align:right;"> 0.1778994 </td>
-   <td style="text-align:right;"> 0.4119930 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1332044 </td>
-   <td style="text-align:right;"> 0.1653527 </td>
-   <td style="text-align:right;"> 0.0498912 </td>
-   <td style="text-align:right;"> 0.1262469 </td>
-   <td style="text-align:right;"> 0.0766230 </td>
-   <td style="text-align:right;"> 0.1455945 </td>
-   <td style="text-align:right;"> 0.3440413 </td>
-   <td style="text-align:right;"> 0.2681977 </td>
-   <td style="text-align:right;"> 0.3439654 </td>
-   <td style="text-align:right;"> 0.1130305 </td>
+   <td style="text-align:left;"> pon </td>
+   <td style="text-align:left;"> Orangutan </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2423764 </td>
-   <td style="text-align:right;"> 0.1774321 </td>
-   <td style="text-align:right;"> 0.1577939 </td>
-   <td style="text-align:right;"> 0.4162232 </td>
-   <td style="text-align:right;"> 0.1332044 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1949134 </td>
-   <td style="text-align:right;"> 0.1627810 </td>
-   <td style="text-align:right;"> 0.2026981 </td>
-   <td style="text-align:right;"> 0.1505334 </td>
-   <td style="text-align:right;"> 0.2228541 </td>
-   <td style="text-align:right;"> 0.3540006 </td>
-   <td style="text-align:right;"> 0.2845694 </td>
-   <td style="text-align:right;"> 0.3668374 </td>
-   <td style="text-align:right;"> 0.1545231 </td>
+   <td style="text-align:left;"> ggo </td>
+   <td style="text-align:left;"> Gorilla </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2326588 </td>
-   <td style="text-align:right;"> 0.1734644 </td>
-   <td style="text-align:right;"> 0.1031528 </td>
-   <td style="text-align:right;"> 0.4041677 </td>
-   <td style="text-align:right;"> 0.1653527 </td>
-   <td style="text-align:right;"> 0.1949134 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1923100 </td>
-   <td style="text-align:right;"> 0.2265499 </td>
-   <td style="text-align:right;"> 0.1851667 </td>
-   <td style="text-align:right;"> 0.2376736 </td>
-   <td style="text-align:right;"> 0.3289289 </td>
-   <td style="text-align:right;"> 0.2618325 </td>
-   <td style="text-align:right;"> 0.3443932 </td>
-   <td style="text-align:right;"> 0.1691041 </td>
+   <td style="text-align:left;"> rro </td>
+   <td style="text-align:left;"> Golden Snub-Nosed Monkey </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2481991 </td>
-   <td style="text-align:right;"> 0.1859616 </td>
-   <td style="text-align:right;"> 0.1631462 </td>
-   <td style="text-align:right;"> 0.4058230 </td>
-   <td style="text-align:right;"> 0.0498912 </td>
-   <td style="text-align:right;"> 0.1627810 </td>
-   <td style="text-align:right;"> 0.1923100 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1418866 </td>
-   <td style="text-align:right;"> 0.0767049 </td>
-   <td style="text-align:right;"> 0.1697134 </td>
-   <td style="text-align:right;"> 0.3457097 </td>
-   <td style="text-align:right;"> 0.2716256 </td>
-   <td style="text-align:right;"> 0.3482124 </td>
-   <td style="text-align:right;"> 0.1131495 </td>
+   <td style="text-align:left;"> ptr </td>
+   <td style="text-align:left;"> Chimpanzee </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2748795 </td>
-   <td style="text-align:right;"> 0.2214855 </td>
-   <td style="text-align:right;"> 0.1968668 </td>
-   <td style="text-align:right;"> 0.4189090 </td>
-   <td style="text-align:right;"> 0.1262469 </td>
-   <td style="text-align:right;"> 0.2026981 </td>
-   <td style="text-align:right;"> 0.2265499 </td>
-   <td style="text-align:right;"> 0.1418866 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1010674 </td>
-   <td style="text-align:right;"> 0.1183405 </td>
-   <td style="text-align:right;"> 0.3502277 </td>
-   <td style="text-align:right;"> 0.2775962 </td>
-   <td style="text-align:right;"> 0.3499185 </td>
-   <td style="text-align:right;"> 0.1295820 </td>
+   <td style="text-align:left;"> mcf </td>
+   <td style="text-align:left;"> Crab-Eating Macaque </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2429357 </td>
-   <td style="text-align:right;"> 0.1785280 </td>
-   <td style="text-align:right;"> 0.1464927 </td>
-   <td style="text-align:right;"> 0.4034200 </td>
-   <td style="text-align:right;"> 0.0766230 </td>
-   <td style="text-align:right;"> 0.1505334 </td>
-   <td style="text-align:right;"> 0.1851667 </td>
-   <td style="text-align:right;"> 0.0767049 </td>
-   <td style="text-align:right;"> 0.1010674 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.1926439 </td>
-   <td style="text-align:right;"> 0.3460145 </td>
-   <td style="text-align:right;"> 0.2760419 </td>
-   <td style="text-align:right;"> 0.3494909 </td>
-   <td style="text-align:right;"> 0.1228976 </td>
+   <td style="text-align:left;"> pps </td>
+   <td style="text-align:left;"> Bonobo </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2768555 </td>
-   <td style="text-align:right;"> 0.2236106 </td>
-   <td style="text-align:right;"> 0.2229308 </td>
-   <td style="text-align:right;"> 0.4302380 </td>
-   <td style="text-align:right;"> 0.1455945 </td>
-   <td style="text-align:right;"> 0.2228541 </td>
-   <td style="text-align:right;"> 0.2376736 </td>
-   <td style="text-align:right;"> 0.1697134 </td>
-   <td style="text-align:right;"> 0.1183405 </td>
-   <td style="text-align:right;"> 0.1926439 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.3604572 </td>
-   <td style="text-align:right;"> 0.2756430 </td>
-   <td style="text-align:right;"> 0.3568958 </td>
-   <td style="text-align:right;"> 0.1316018 </td>
+   <td style="text-align:left;"> rbb </td>
+   <td style="text-align:left;"> Black Snub-Nosed Monkey </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.3904953 </td>
-   <td style="text-align:right;"> 0.3590270 </td>
-   <td style="text-align:right;"> 0.3191746 </td>
-   <td style="text-align:right;"> 0.1330500 </td>
-   <td style="text-align:right;"> 0.3440413 </td>
-   <td style="text-align:right;"> 0.3540006 </td>
-   <td style="text-align:right;"> 0.3289289 </td>
-   <td style="text-align:right;"> 0.3457097 </td>
-   <td style="text-align:right;"> 0.3502277 </td>
-   <td style="text-align:right;"> 0.3460145 </td>
-   <td style="text-align:right;"> 0.3604572 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.4446449 </td>
-   <td style="text-align:right;"> 0.1584049 </td>
-   <td style="text-align:right;"> 0.4148792 </td>
+   <td style="text-align:left;"> hsa </td>
+   <td style="text-align:left;"> Human </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.1845335 </td>
-   <td style="text-align:right;"> 0.2635393 </td>
-   <td style="text-align:right;"> 0.2741974 </td>
-   <td style="text-align:right;"> 0.4521437 </td>
-   <td style="text-align:right;"> 0.2681977 </td>
-   <td style="text-align:right;"> 0.2845694 </td>
-   <td style="text-align:right;"> 0.2618325 </td>
-   <td style="text-align:right;"> 0.2716256 </td>
-   <td style="text-align:right;"> 0.2775962 </td>
-   <td style="text-align:right;"> 0.2760419 </td>
-   <td style="text-align:right;"> 0.2756430 </td>
-   <td style="text-align:right;"> 0.4446449 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.4013349 </td>
-   <td style="text-align:right;"> 0.2521617 </td>
+   <td style="text-align:left;"> cjc </td>
+   <td style="text-align:left;"> White-Tufted-Ear Marmoset </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.4078432 </td>
-   <td style="text-align:right;"> 0.3750817 </td>
-   <td style="text-align:right;"> 0.3359914 </td>
-   <td style="text-align:right;"> 0.1307674 </td>
-   <td style="text-align:right;"> 0.3439654 </td>
-   <td style="text-align:right;"> 0.3668374 </td>
-   <td style="text-align:right;"> 0.3443932 </td>
-   <td style="text-align:right;"> 0.3482124 </td>
-   <td style="text-align:right;"> 0.3499185 </td>
-   <td style="text-align:right;"> 0.3494909 </td>
-   <td style="text-align:right;"> 0.3568958 </td>
-   <td style="text-align:right;"> 0.1584049 </td>
-   <td style="text-align:right;"> 0.4013349 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
-   <td style="text-align:right;"> 0.4131155 </td>
+   <td style="text-align:left;"> tfn </td>
+   <td style="text-align:left;"> Francois's Langur </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.2303475 </td>
-   <td style="text-align:right;"> 0.1613516 </td>
-   <td style="text-align:right;"> 0.1549307 </td>
-   <td style="text-align:right;"> 0.4070806 </td>
-   <td style="text-align:right;"> 0.1130305 </td>
-   <td style="text-align:right;"> 0.1545231 </td>
-   <td style="text-align:right;"> 0.1691041 </td>
-   <td style="text-align:right;"> 0.1131495 </td>
-   <td style="text-align:right;"> 0.1295820 </td>
-   <td style="text-align:right;"> 0.1228976 </td>
-   <td style="text-align:right;"> 0.1316018 </td>
-   <td style="text-align:right;"> 0.4148792 </td>
-   <td style="text-align:right;"> 0.2521617 </td>
-   <td style="text-align:right;"> 0.4131155 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:left;"> csab </td>
+   <td style="text-align:left;"> Green Monkey </td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> sbq </th>
+   <th style="text-align:right;"> nle </th>
+   <th style="text-align:right;"> mcc </th>
+   <th style="text-align:right;"> caty </th>
+   <th style="text-align:right;"> pon </th>
+   <th style="text-align:right;"> ggo </th>
+   <th style="text-align:right;"> rro </th>
+   <th style="text-align:right;"> ptr </th>
+   <th style="text-align:right;"> mcf </th>
+   <th style="text-align:right;"> pps </th>
+   <th style="text-align:right;"> rbb </th>
+   <th style="text-align:right;"> hsa </th>
+   <th style="text-align:right;"> cjc </th>
+   <th style="text-align:right;"> tfn </th>
+   <th style="text-align:right;"> csab </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> sbq </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.39 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.23 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> nle </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.38 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> 0.38 </td>
+   <td style="text-align:right;"> 0.16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> mcc </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.20 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> caty </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.38 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.42 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.42 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.43 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.45 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.41 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pon </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ggo </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.42 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.20 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.37 </td>
+   <td style="text-align:right;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rro </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ptr </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.14 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> mcf </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.20 </td>
+   <td style="text-align:right;"> 0.42 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.20 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.14 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> pps </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> rbb </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.43 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.19 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> hsa </td>
+   <td style="text-align:right;"> 0.39 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.32 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.44 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.41 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> cjc </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.45 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.26 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.44 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.25 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> tfn </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.38 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.37 </td>
+   <td style="text-align:right;"> 0.34 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.40 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 0.41 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> csab </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.11 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.11 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.00 </td>
   </tr>
 </tbody>
 </table>
@@ -73018,28 +73105,28 @@ Load
 
 ```
 ## % latex table generated in R 4.1.2 by xtable 1.8-4 package
-## % Tue Nov 23 00:40:38 2021
+## % Fri Nov 26 12:01:32 2021
 ## \begin{table}[ht]
 ## \centering
 ## \begin{tabular}{rrrrrrrrrrrrrrrr}
 ##   \hline
-##  & 0001 & 0002 & 0003 & 0004 & 0005 & 0006 & 0007 & 0008 & 0009 & 0010 & 0011 & 0012 & 0013 & 0014 & 0015 \\ 
+##  & sbq & nle & mcc & caty & pon & ggo & rro & ptr & mcf & pps & rbb & hsa & cjc & tfn & csab \\ 
 ##   \hline
-## 1 & 0.00 & 0.19 & 0.25 & 0.41 & 0.25 & 0.24 & 0.23 & 0.25 & 0.27 & 0.24 & 0.28 & 0.39 & 0.18 & 0.41 & 0.23 \\ 
-##   2 & 0.19 & 0.00 & 0.19 & 0.38 & 0.19 & 0.18 & 0.17 & 0.19 & 0.22 & 0.18 & 0.22 & 0.36 & 0.26 & 0.38 & 0.16 \\ 
-##   3 & 0.25 & 0.19 & 0.00 & 0.34 & 0.18 & 0.16 & 0.10 & 0.16 & 0.20 & 0.15 & 0.22 & 0.32 & 0.27 & 0.34 & 0.15 \\ 
-##   4 & 0.41 & 0.38 & 0.34 & 0.00 & 0.41 & 0.42 & 0.40 & 0.41 & 0.42 & 0.40 & 0.43 & 0.13 & 0.45 & 0.13 & 0.41 \\ 
-##   5 & 0.25 & 0.19 & 0.18 & 0.41 & 0.00 & 0.13 & 0.17 & 0.05 & 0.13 & 0.08 & 0.15 & 0.34 & 0.27 & 0.34 & 0.11 \\ 
-##   6 & 0.24 & 0.18 & 0.16 & 0.42 & 0.13 & 0.00 & 0.19 & 0.16 & 0.20 & 0.15 & 0.22 & 0.35 & 0.28 & 0.37 & 0.15 \\ 
-##   7 & 0.23 & 0.17 & 0.10 & 0.40 & 0.17 & 0.19 & 0.00 & 0.19 & 0.23 & 0.19 & 0.24 & 0.33 & 0.26 & 0.34 & 0.17 \\ 
-##   8 & 0.25 & 0.19 & 0.16 & 0.41 & 0.05 & 0.16 & 0.19 & 0.00 & 0.14 & 0.08 & 0.17 & 0.35 & 0.27 & 0.35 & 0.11 \\ 
-##   9 & 0.27 & 0.22 & 0.20 & 0.42 & 0.13 & 0.20 & 0.23 & 0.14 & 0.00 & 0.10 & 0.12 & 0.35 & 0.28 & 0.35 & 0.13 \\ 
-##   10 & 0.24 & 0.18 & 0.15 & 0.40 & 0.08 & 0.15 & 0.19 & 0.08 & 0.10 & 0.00 & 0.19 & 0.35 & 0.28 & 0.35 & 0.12 \\ 
-##   11 & 0.28 & 0.22 & 0.22 & 0.43 & 0.15 & 0.22 & 0.24 & 0.17 & 0.12 & 0.19 & 0.00 & 0.36 & 0.28 & 0.36 & 0.13 \\ 
-##   12 & 0.39 & 0.36 & 0.32 & 0.13 & 0.34 & 0.35 & 0.33 & 0.35 & 0.35 & 0.35 & 0.36 & 0.00 & 0.44 & 0.16 & 0.41 \\ 
-##   13 & 0.18 & 0.26 & 0.27 & 0.45 & 0.27 & 0.28 & 0.26 & 0.27 & 0.28 & 0.28 & 0.28 & 0.44 & 0.00 & 0.40 & 0.25 \\ 
-##   14 & 0.41 & 0.38 & 0.34 & 0.13 & 0.34 & 0.37 & 0.34 & 0.35 & 0.35 & 0.35 & 0.36 & 0.16 & 0.40 & 0.00 & 0.41 \\ 
-##   15 & 0.23 & 0.16 & 0.15 & 0.41 & 0.11 & 0.15 & 0.17 & 0.11 & 0.13 & 0.12 & 0.13 & 0.41 & 0.25 & 0.41 & 0.00 \\ 
+## sbq & 0.00 & 0.19 & 0.25 & 0.41 & 0.25 & 0.24 & 0.23 & 0.25 & 0.27 & 0.24 & 0.28 & 0.39 & 0.18 & 0.41 & 0.23 \\ 
+##   nle & 0.19 & 0.00 & 0.19 & 0.38 & 0.19 & 0.18 & 0.17 & 0.19 & 0.22 & 0.18 & 0.22 & 0.36 & 0.26 & 0.38 & 0.16 \\ 
+##   mcc & 0.25 & 0.19 & 0.00 & 0.34 & 0.18 & 0.16 & 0.10 & 0.16 & 0.20 & 0.15 & 0.22 & 0.32 & 0.27 & 0.34 & 0.15 \\ 
+##   caty & 0.41 & 0.38 & 0.34 & 0.00 & 0.41 & 0.42 & 0.40 & 0.41 & 0.42 & 0.40 & 0.43 & 0.13 & 0.45 & 0.13 & 0.41 \\ 
+##   pon & 0.25 & 0.19 & 0.18 & 0.41 & 0.00 & 0.13 & 0.17 & 0.05 & 0.13 & 0.08 & 0.15 & 0.34 & 0.27 & 0.34 & 0.11 \\ 
+##   ggo & 0.24 & 0.18 & 0.16 & 0.42 & 0.13 & 0.00 & 0.19 & 0.16 & 0.20 & 0.15 & 0.22 & 0.35 & 0.28 & 0.37 & 0.15 \\ 
+##   rro & 0.23 & 0.17 & 0.10 & 0.40 & 0.17 & 0.19 & 0.00 & 0.19 & 0.23 & 0.19 & 0.24 & 0.33 & 0.26 & 0.34 & 0.17 \\ 
+##   ptr & 0.25 & 0.19 & 0.16 & 0.41 & 0.05 & 0.16 & 0.19 & 0.00 & 0.14 & 0.08 & 0.17 & 0.35 & 0.27 & 0.35 & 0.11 \\ 
+##   mcf & 0.27 & 0.22 & 0.20 & 0.42 & 0.13 & 0.20 & 0.23 & 0.14 & 0.00 & 0.10 & 0.12 & 0.35 & 0.28 & 0.35 & 0.13 \\ 
+##   pps & 0.24 & 0.18 & 0.15 & 0.40 & 0.08 & 0.15 & 0.19 & 0.08 & 0.10 & 0.00 & 0.19 & 0.35 & 0.28 & 0.35 & 0.12 \\ 
+##   rbb & 0.28 & 0.22 & 0.22 & 0.43 & 0.15 & 0.22 & 0.24 & 0.17 & 0.12 & 0.19 & 0.00 & 0.36 & 0.28 & 0.36 & 0.13 \\ 
+##   hsa & 0.39 & 0.36 & 0.32 & 0.13 & 0.34 & 0.35 & 0.33 & 0.35 & 0.35 & 0.35 & 0.36 & 0.00 & 0.44 & 0.16 & 0.41 \\ 
+##   cjc & 0.18 & 0.26 & 0.27 & 0.45 & 0.27 & 0.28 & 0.26 & 0.27 & 0.28 & 0.28 & 0.28 & 0.44 & 0.00 & 0.40 & 0.25 \\ 
+##   tfn & 0.41 & 0.38 & 0.34 & 0.13 & 0.34 & 0.37 & 0.34 & 0.35 & 0.35 & 0.35 & 0.36 & 0.16 & 0.40 & 0.00 & 0.41 \\ 
+##   csab & 0.23 & 0.16 & 0.15 & 0.41 & 0.11 & 0.15 & 0.17 & 0.11 & 0.13 & 0.12 & 0.13 & 0.41 & 0.25 & 0.41 & 0.00 \\ 
 ##    \hline
 ## \end{tabular}
 ## \end{table}

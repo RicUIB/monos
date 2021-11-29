@@ -102,19 +102,35 @@ Load
 D15=read_csv("data/data/data/Distances_mDAG_Primates.csv",show_col_types = FALSE)[,-1]
 S15=read_csv("data/data/data/Similarities_mDAG_Primates.csv",show_col_types = FALSE)[,-1]
 
-knitr::kable(D15)
+knitr::kable(select(arrange(primates15_mapping,mDag_Idn), Organism, Labels))
+D15print=as.data.frame(D15)
+dimnames(D15print)=list(arrange(primates15_mapping,mDag_Idn)$Organism,arrange(primates15_mapping,mDag_Idn)$Organism)
+D5print=D15print[index_hominoides$mDag_Idn,index_hominoides$mDag_Idn]
+D5print
+knitr::kable(D15print,
+             row.names = TRUE,
+             digits = 2)
+
+knitr::kable(D5print,
+             row.names = TRUE,
+             digits = 2)
+
 ```
 
 
-### Latex D15
+### Latex D15 and  D5
 
 
 ```{r tablas}
 library(xtable)
-print(xtable(D15),type="latex")
+print(xtable(D15print),type="latex")
 ```
 
 
+```{r tablas2}
+#library(xtable)
+print(xtable(D5print),type="latex")
+```
 
 # Clustering 15 y 5
 
@@ -128,17 +144,24 @@ tree15=as.phylo(tree15)
 tree15$tip.label=arrange(primates15_mapping,mDag_Idn)$labels
 
 ggtree(tree15, layout='circular') %<+% primates15_mapping + 
-    aes(color="red") + geom_tippoint(aes(size=0.01), alpha=.6) + 
+    aes(color="red") + geom_tippoint()+
     geom_tiplab(aes(
-      label=c(arrange(primates15_mapping,mDag_Idn)$Labels,as.character(16:29)),
-      offset=.1),size=2,colour="black")+
+      label=paste0(" ",c(arrange(primates15_mapping,mDag_Idn)$Organism,as.character(16:29))," "),
+      offset=0.5),size=4,colour="black")+
   theme(legend.position = "none")+
   theme(plot.margin=margin(60,60,60,60))
 
 
 ggtree(tree15,layout='slanted') %<+% primates15_mapping + 
   aes(color="red")+ geom_tippoint() +
-  geom_tiplab(aes(label=c(arrange(primates15_mapping,mDag_Idn)$Labels,as.character(16:29))),size=3 ,angle=-40,colour="black",offset=-0.01)+
+  geom_tiplab(aes(
+      label=paste0(" ",
+                   c(arrange(primates15_mapping,mDag_Idn)$Organism,as.character(16:29)),
+                   " ")),
+      size=4,
+      angle=-40, 
+      colour="black",
+      offset=-0.01)+
   hexpand(.5)+layout_dendrogram() +   theme(plot.margin=margin(60,60,60,60)) + theme(legend.position = "none")     
 
 ```
@@ -153,20 +176,21 @@ tree5=as.phylo(tree5)
 tree5$tip.label=index_hominoides$labels
 
 ggtree(tree5, layout='circular') %<+% index_hominoides + 
-    aes(color="red") + geom_tippoint(aes(size=0.1), alpha=.6) + 
+    aes(color="red") + geom_tippoint() + 
     geom_tiplab(aes(
       label=c(arrange(index_hominoides,idn)$Labels, as.character(6:9))),
-      offset=.1,size=3,colour="black")+
+      offset=0.01,size=3,colour="black")+
   theme(legend.position = "none")+
   theme(plot.margin=margin(60,60,60,60))
 
 
-ggtree(tree5,layout='slanted') %<+%  index_hominoides+ 
+plot5=ggtree(tree5,layout='slanted') %<+%  index_hominoides+ 
   aes(color="red")+ geom_tippoint() +
   geom_tiplab(aes(label=c(arrange(index_hominoides,idn)$Labels,
                           as.character(6:9))),size=3 ,angle=-40,
               colour="black",offset=-0.01)+ hexpand(.5)+layout_dendrogram() +
   theme(plot.margin=margin(60,60,60,60)) + theme(legend.position = "none")     
+plot(plot5)
 ```
 
 
@@ -207,19 +231,61 @@ five=core(combn(MBBH$mDag_Id,5))
 
 
 ```{r}
-labs=c(MBBH$mDag_Id,
-       paste(combn(MBBH$mDag_Id,2)[1,],combn(MBBH$mDag_Id,2)[2,],sep="_"),
-       paste(combn(MBBH$mDag_Id,3)[1,],combn(MBBH$mDag_Id,3)[2,],
-             combn(MBBH$mDag_Id,3)[3,],sep="_"),
-       paste(combn(MBBH$mDag_Id,4)[1,],combn(MBBH$mDag_Id,4)[,2],
-             combn(MBBH$mDag_Id,4)[3,],combn(MBBH$mDag_Id,4)[,4],
-             sep="_"),
-       paste(combn(MBBH$mDag_Id,5),collapse="_"))
+organism=index_hominoides$Organism
+
+char_sep=", "
+labs=c(organism,
+       paste(combn(organism,2)[1,],combn(organism,2)[2,],sep=char_sep),
+       paste(combn(organism,3)[1,],combn(organism,3)[2,],
+             combn(organism,3)[3,],sep=char_sep),
+       paste(combn(organism,4)[1,],combn(organism,4)[2,],
+             combn(organism,4)[3,],combn(organism,4)[4,],
+             sep=char_sep),
+       paste(combn(organism,5),collapse="_"))
 tb=tibble(n=c(one,two,three,four,five),labs,order=1:31,`number species`=rep(c(1,2,3,4,5),times=c(5,10,10,5,1)))
-tb=arrange(tb,order,n)
-ggplot(data=tb, aes(x=reorder(labs,order), y=n)) + geom_bar(stat="identity", fill=tb$`number species`)+ coord_flip()+
+tb_1=arrange(tb,n)
+
+ggplot(data=tb, aes(x=labs, y=n)) + geom_bar(stat="identity", fill=tb$`number species`)+ coord_flip()+
   labs(title = "Number of MBB's by several cores", x = "Species", y = "Number of MBB's")+
-  scale_x_discrete(limits = arrange(tb,order,n)$labs)
+  scale_x_discrete(limits = arrange(tb,`number species`,-n)$labs)
+
+```
+
+## Tree 5 & MBB's 
+
+
+```{r}
+library(reshape2)
+
+total_MBB=as.integer(table(colSums(MBB_count)>0)[2])
+total_MBB
+
+
+a <- rep(total_MBB,5)
+b <- rowSums(MBBH[,-c(1:9)])
+a= a-b
+a
+
+df <- data.frame(tree5$tip.label, a, b)
+
+
+df=pivot_longer(df,c(a,b))
+df
+
+ggplot(df,aes(x =tree5.tip.label, y=value, fill =  name)) +   geom_bar(stat = "identity")
+
+
+geom_facet(panel = "MBB's", data = df, geom = geom_bar, 
+                 mapping = aes(x = tree5.tip.label, y=value, fill = name), 
+                 orientation = 'y', width = 0.8, stat='identity')
+
+
+tree5_2 <- tree5 + geom_facet(panel = "MBB's", data = df, geom = geom_bar, 
+                 mapping = aes(x = tree5.tip.label, y=value, fill = name), 
+                 orientation = 'y', width = 0.8, stat='identity')+xlim_tree(5)
+
+facet_widths(tree5, widths = c(1, 2))
+
 ```
 
 
